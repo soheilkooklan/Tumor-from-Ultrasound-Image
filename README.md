@@ -49,8 +49,9 @@ Several AI-based tools were utilized to complete and debug the code, including t
 1. **Using the Interface**
    - **Load Ultrasound Image**: Upload an ultrasound image via "Load Ultrasound Image". The simple CNN model will automatically segment the image and display results.
    - **View DCFN+PBAC and U-Net Results**: The DCFN+PBAC and U-Net models (if available) apply their segmentation to the uploaded image for comparison.
-   - **Upload Custom Model**: Use "Upload Model for Comparison" to load a custom model that will segment the image.
+   **Upload Custom Model**: Use "Upload Model for Comparison" to load a custom model that segments the image.
    - **Compare Results**: Segmentation results and accuracy estimates from each model are displayed side-by-side for easy comparison.
+   - **Mask Loading and Preprocessing**: A ground truth mask is loaded using a similar filename convention (e.g., `image.jpg` and `image_mask.png`). If a matching mask is not found, a warning message is shown, and segmentation won’t proceed with the accuracy calculation.
 
 ## Implemented Models
 
